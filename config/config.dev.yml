@@ -1,0 +1,17 @@
+appname: sns-api
+port: 8080
+env: dev
+logger:
+  use: zap
+  environment: dev
+  loglevel: debug
+  filename: log/app.log
+db:
+  corpus:
+    host: mysql
+    port: 3306
+    username: mysql
+    password: mysql
+    database: app
+  elasticsearch:
+    address: http://localhost:8443
